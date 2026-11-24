@@ -1641,6 +1641,40 @@ endmodule</string>
       </elementAttributes>
       <pos x="-1960" y="-840"/>
     </visualElement>
+    <visualElement>
+      <elementName>External</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ControleLeitura</string>
+        </entry>
+        <entry>
+          <string>applicationType</string>
+          <appType>IVERILOG</appType>
+        </entry>
+        <entry>
+          <string>externalInputs</string>
+          <string>Dado:32,MemRead</string>
+        </entry>
+        <entry>
+          <string>externalOutputs</string>
+          <string>Y:32</string>
+        </entry>
+        <entry>
+          <string>Code</string>
+          <string>module ControleLeitura(
+    input  [31:0] Dado,
+    input         MemRead,
+    output [31:0] Y
+);
+
+    assign Y = MemRead ? Dado : 32&apos;d0;
+
+endmodule</string>
+        </entry>
+      </elementAttributes>
+      <pos x="-80" y="-560"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -1714,6 +1748,10 @@ endmodule</string>
     <wire>
       <p1 x="-2160" y="-520"/>
       <p2 x="-2120" y="-520"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-520"/>
+      <p2 x="-80" y="-520"/>
     </wire>
     <wire>
       <p1 x="-1740" y="-200"/>
@@ -1814,10 +1852,6 @@ endmodule</string>
     <wire>
       <p1 x="-1780" y="-660"/>
       <p2 x="-1720" y="-660"/>
-    </wire>
-    <wire>
-      <p1 x="-80" y="-660"/>
-      <p2 x="-20" y="-660"/>
     </wire>
     <wire>
       <p1 x="-900" y="-660"/>
@@ -2112,6 +2146,10 @@ endmodule</string>
       <p2 x="-1420" y="-500"/>
     </wire>
     <wire>
+      <p1 x="-1060" y="-500"/>
+      <p2 x="-100" y="-500"/>
+    </wire>
+    <wire>
       <p1 x="-2160" y="-760"/>
       <p2 x="-2120" y="-760"/>
     </wire>
@@ -2192,6 +2230,10 @@ endmodule</string>
       <p2 x="-140" y="-700"/>
     </wire>
     <wire>
+      <p1 x="-1220" y="-700"/>
+      <p2 x="-1060" y="-700"/>
+    </wire>
+    <wire>
       <p1 x="-1580" y="-1020"/>
       <p2 x="-1520" y="-1020"/>
     </wire>
@@ -2264,6 +2306,10 @@ endmodule</string>
       <p2 x="-660" y="-1160"/>
     </wire>
     <wire>
+      <p1 x="-20" y="-660"/>
+      <p2 x="-20" y="-540"/>
+    </wire>
+    <wire>
       <p1 x="-280" y="-1080"/>
       <p2 x="-280" y="-800"/>
     </wire>
@@ -2314,6 +2360,10 @@ endmodule</string>
     <wire>
       <p1 x="-160" y="-720"/>
       <p2 x="-160" y="-700"/>
+    </wire>
+    <wire>
+      <p1 x="-1060" y="-700"/>
+      <p2 x="-1060" y="-500"/>
     </wire>
     <wire>
       <p1 x="-40" y="-920"/>
@@ -2424,6 +2474,10 @@ endmodule</string>
       <p2 x="-2000" y="-280"/>
     </wire>
     <wire>
+      <p1 x="-80" y="-660"/>
+      <p2 x="-80" y="-560"/>
+    </wire>
+    <wire>
       <p1 x="-980" y="-720"/>
       <p2 x="-980" y="-660"/>
     </wire>
@@ -2466,6 +2520,10 @@ endmodule</string>
     <wire>
       <p1 x="-2020" y="-920"/>
       <p2 x="-2020" y="-820"/>
+    </wire>
+    <wire>
+      <p1 x="-100" y="-520"/>
+      <p2 x="-100" y="-500"/>
     </wire>
     <wire>
       <p1 x="-1640" y="-940"/>
